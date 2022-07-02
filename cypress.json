@@ -2,11 +2,12 @@
   "video": false,
   "defaultCommandTimeout": 10000,
   "pageLoadTimeout": 60000,
+  "testFiles": "**/**.feature",
   "ignoreTestFile": [
     "*.js",
     "*.md"
   ],
-  "watchForFileChanges": false,
+  "watchForFileChanges": true,
   "execTimeout": 60000,
   "requestTimeout": 15000,
   "responseTimeout": 15000,
