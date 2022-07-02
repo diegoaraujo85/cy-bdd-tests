@@ -1,0 +1,14 @@
+{
+  "video": false,
+  "defaultCommandTimeout": 10000,
+  "pageLoadTimeout": 60000,
+  "ignoreTestFile": [
+    "*.js",
+    "*.md"
+  ],
+  "watchForFileChanges": false,
+  "execTimeout": 60000,
+  "requestTimeout": 15000,
+  "responseTimeout": 15000,
+  "failOnStatusCode": false
+}
