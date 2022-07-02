@@ -1,5 +1,4 @@
 /// <reference types="cypress" />
-const cucumber = require('cypress-cucumber-preprocessor').default;
 // ***********************************************************
 // This example plugins/index.js can be used to load plugins
 //
@@ -13,9 +12,8 @@ const cucumber = require('cypress-cucumber-preprocessor').default;
 // This function is called when a project is opened or re-opened (e.g. due to
 // the project's config changing)
 
-/**
- * @type {Cypress.PluginConfig}
- */
+const cucumber = require('cypress-cucumber-preprocessor').default
+
 module.exports = (on, config) => {
-  open('file:preprocessor', cucumber())
+  on('file:preprocessor', cucumber())
 }
