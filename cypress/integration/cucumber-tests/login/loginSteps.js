@@ -23,5 +23,13 @@ And(/^I click on submit login$/, () => {
 });
 
 Then(/^I should see the homepage$/, () => {
-  cy.get('#account_summary_tab').should('be.visible');
+  cy.go('back') // workaround for chrome-error
+  // cy.get('#account_summary_tab').should('be.visible');
+  cy.get('.float-right').contains('username')
 });
+
+
+Then(/^I should see the error message$/, () => {
+  LoginPage.shouldShowErrorMessage();
+});
+
