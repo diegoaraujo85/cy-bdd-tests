@@ -1,5 +1,3 @@
-import cypress from "cypress";
-
 const URL = 'http://zero.webappsecurity.com/login.html';
 const USERNAME_INPUT = '#user_login';
 const PASSWORD_INPUT = '#user_password';
